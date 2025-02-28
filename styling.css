@@ -1,16 +1,16 @@
 ul.nav {
 	list-style-type: none;
   overflow: hidden;
-	background-color: #3495eb;
-	position: fixed; /* Set the navbar to fixed position *
- 	top: 0; /* Position the navbar at the top of the page *
+	background-color: #8789C0;
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
 	left: 0;
 	right: 0;
- 	width: 100%;
+	width: 98%;
 }
 
 li.nav {
-	float: right;
+	float: left;
 }
 
 
@@ -18,10 +18,10 @@ li.nav a {
 	font-family: "Garamond", serif;
 	font-size: 1.5em;
 	display: block;
-  	color: white;
+		color: white;
   	text-align: center;
-  	padding: 14px 25px;
-  	text-decoration: none;
+		padding: 16px 20px;
+		text-decoration: underline;
 }
 
 li.nav a:hover {
@@ -30,5 +30,26 @@ li.nav a:hover {
 
 ul.nodot {
 	list-style-type: none;
-	margin-left: 8%;
+	margin-left: 9%;
 }
+header.Jhoanna-Digital Resume
+h1 {
+	letter-spacing: 6xp;
+	padding-top: 25%;
+	text-align: center;
+}
+p.two{
+  border-style: solid;
+  border-width: medium;
+}
+
+body {background-color: #F4FAFF;
+}
+
+
+h1 {
+	text-align: center;
+	text-shadow:2px 2px 5px lightblue;
+	line-height: 7;
+	text-decoration-line: underline;
+	}
