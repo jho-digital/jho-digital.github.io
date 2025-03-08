@@ -37,6 +37,9 @@ h1 {
 	letter-spacing: 6xp;
 	padding-top: 25%;
 	text-align: center;
+	body {
+margin-left: 10%;
+}
 }
 p.two{
   border-style: solid;
