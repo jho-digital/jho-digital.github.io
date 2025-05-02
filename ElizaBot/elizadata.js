@@ -3,27 +3,27 @@
 // [cf: Communications of the ACM, Vol. 9, #1 (January 1966): p 36-45.]
 
 var elizaInitials = [
-"How do you do.  Please tell me your problem.",
+"Hey whats up? Tell me how was your day!",
 // additions (not original)
-"Please tell me what's been bothering you.",
-"Is something troubling you ?"
+"Bestie lets talk!",
+"Is there something on your mind?"
 ];
 
 var elizaFinals = [
-"Goodbye.  It was nice talking to you.",
+"Bye Bestie. Have an amazing day!",
 // additions (not original)
-"Goodbye.  This was really a nice talk.",
-"Goodbye.  I'm looking forward to our next session.",
-"This was a good session, wasn't it -- but time is over now.   Goodbye.",
-"Maybe we could discuss this moreover in our next session ?   Goodbye."
+//"Goodbye.  This was really a nice talk.",
+//"Goodbye.  I'm looking forward to our next session.",
+"This was a good debrief, wasn't it -- but its time to say Goodbye.   Goodbye.",
+" Awe Lets talk again very soon? ill miss you. Bye!"
 ];
 
 var elizaQuits = [
-"bye",
+"bye bestie",
 "goodbye",
-"done",
-"exit",
-"quit"
+"Thanks for listening to me!",
+//"exit",
+//"quit"
 ];
 
 var elizaPres = [
@@ -92,7 +92,7 @@ var elizaKeywords = [
  ["*", [
      "I'm not sure I understand you fully.",
      "Please go on.",
-     "What does that suggest to you ?",
+     "What does that suggest to you?",
      "Do you feel strongly about discussing such things ?",
      "That is interesting.  Please continue.",
      "Tell me more about that.",
@@ -101,9 +101,9 @@ var elizaKeywords = [
 ]],
 ["sorry", 0, [
  ["*", [
-     "Please don't apologise.",
-     "Apologies are not necessary.",
-     "I've told you that apologies are not required.",
+     "No girl don't apologise.",
+     //"Apologies are not necessary.",
+     "Im your bestie. Apologies are not required.",
      "It did not bother me.  Please continue."
   ]]
 ]],
@@ -175,26 +175,27 @@ var elizaKeywords = [
 ]],
 ["dream", 3, [
  ["*", [
-     "What does that dream suggest to you ?",
-     "Do you dream often ?",
-     "What persons appear in your dreams ?",
-     "Do you believe that dreams have something to do with your problem ?"
+     "Wow did that dream mean anything to you?",
+     " Do you dream often ?",
+     "What did you dream about?",
+    "That dream sounds so cool!"
+     //"Do you believe that dreams have something to do with your problem ?"
   ]]
 ]],
 ["perhaps", 0, [
  ["*", [
-     "You don't seem quite certain.",
-     "Why the uncertain tone ?",
+     "You don't seem okay about this.",
+     "Why the confused attitude ?",
      "Can't you be more positive ?",
-     "You aren't sure ?",
-     "Don't you know ?",
-     "How likely, would you estimate ?"
+     "You aren't sure? Right?",
+     "Don't you understand ?",
+    // "How likely, would you estimate ?"
   ]]
 ]],
 ["name", 15, [
  ["*", [
-     "I am not interested in names.",
-     "I've told you before, I don't care about names -- please continue."
+     "I dont care about names.",
+     //"I've told you before, I don't care about names -- please continue."
   ]]
 ]],
 ["deutsch", 0, [
@@ -218,7 +219,7 @@ var elizaKeywords = [
 ["espanol", 0, [
  ["*", [
      "goto xforeign",
-     "I told you before, I don't understand Spanish."
+     "You know, I don't understand Spanish."
   ]]
 ]],
 ["xforeign", 0, [
@@ -228,19 +229,20 @@ var elizaKeywords = [
 ]],
 ["hello", 0, [
  ["*", [
-     "How do you do.  Please state your problem.",
-     "Hi.  What seems to be your problem ?"
+     "Heyyy!. Ive miss you! whats been happening in your life?",
+     //"Hi.  What seems to be your problem ?"
   ]]
 ]],
 ["computer", 50, [
  ["*", [
-     "Do computers worry you ?",
-     "Why do you mention computers ?",
-     "What do you think machines have to do with your problem ?",
-     "Don't you think computers can help people ?",
-     "What about machines worries you ?",
-     "What do you think about machines ?",
+     "Do computers scare you ?",
+     "Why are you talking about computers ?",
+    // "What do you think machines have to do with your problem ?",
+     "Don't you think computers can help people?",
+     //"What about machines worries you ?",
+     //"What do you think about machines ?",
      "You don't think I am a computer program, do you ?"
+     "Im not a computer. Are you?"
   ]]
 ]],
 ["am", 0, [
@@ -256,18 +258,21 @@ var elizaKeywords = [
   ]],
  ["*", [
      "Why do you say 'am' ?",
-     "I don't understand that."
+     "What are you talking about?"
+     "I have no idea what that means! You need to be more clear please!."
   ]]
 ]],
 ["are", 0, [
  ["* are you *", [
      "Why are you interested in whether I am (2) or not ?",
      "Would you prefer if I weren't (2) ?",
-     "Perhaps I am (2) in your fantasies.",
+     //"Perhaps I am (2) in your fantasies.",
      "Do you sometimes think I am (2) ?",
      "goto what",
      "Would it matter to you ?",
-     "What if I were (2) ?"
+     "What are you interested in?"
+     "Why are you feeling like this bestie?"
+     //"What if I were (2) ?"
   ]],
  ["* you are *", [
      "goto you"
@@ -323,14 +328,14 @@ var elizaKeywords = [
      "What does wanting (3) have to do with this discussion ?"
   ]],
  ["* i am* @sad *", [
-     "I am sorry to hear that you are (3).",
-     "Do you think coming here will help you not to be (3) ?",
-     "I'm sure it's not pleasant to be (3).",
-     "Can you explain what made you (3) ?"
+     "Oh no! Im sorry. (3).",
+     " Do you wanna talk about it(3) ?",
+     "I can imagine its not a great feeling (3).",
+    // "Can you explain what made you (3) ?"
   ]],
  ["* i am* @happy *", [
-     "How have I helped you to be (3) ?",
-     "Has your treatment made you (3) ?",
+     "I knew I could help you ?",
+     "Thats what besties are for !",
      "What makes you (3) just now ?",
      "Can you explain why you are suddenly (3) ?"
   ]],
@@ -363,11 +368,11 @@ var elizaKeywords = [
      "Don't you really (2) ?",
      "Why don't you (2) ?",
      "Do you wish to be able to (2) ?",
-     "Does that trouble you ?"
+     "Does that bother you ?"
   ]],
  ["* i feel *", [
      "Tell me more about such feelings.",
-     "Do you often feel (2) ?",
+     "Do you often feel (2)?",
      "Do you enjoy feeling (2) ?",
      "Of what does feeling (2) remind you ?"
   ]],
@@ -425,12 +430,12 @@ var elizaKeywords = [
      "Can you think of anyone at all ?",
      "Are you thinking of a very special person ?",
      "Who, may I ask ?",
-     "You have a particular person in mind, don't you ?",
+     "I feel like you have a particular person in mind, don't you bestie?",
      "Who do you think you are talking about ?"
   ]],
  ["*", [
-     "Are you saying no just to be negative?",
-     "You are being a bit negative.",
+     "Are you saying no just to be Petty?",
+     "UM okay negative much.",
      "Why not ?",
      "Why 'no' ?"
   ]]
@@ -585,10 +590,10 @@ var elizaKeywords = [
 ["different", 0, [
  ["*", [
      "How is it different ?",
-     "What differences do you see ?",
+     //"What differences do you see ?",
      "What does that difference suggest to you ?",
-     "What other distinctions do you see ?",
-     "What do you suppose that disparity means ?",
+     //"What other distinctions do you see ?",
+     //"What do you suppose that disparity means ?",
      "Could there be some connection, do you suppose ?",
      "How ?"
   ]]
