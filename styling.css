@@ -63,8 +63,8 @@ h1 {
 	}
 
 	iframe.eliza{
-		padding-left: 5%;
-		flex-grow:2;
+		padding-left:2%;
+		flex-grow:3;
 		border: none;
 		margin-top: -1%
 	}
